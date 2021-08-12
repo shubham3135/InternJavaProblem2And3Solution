@@ -18,7 +18,7 @@ public class ValidateMobileNumber {
 
     public static boolean isPhoneNumberValid(String phoneNumber)
     {
-        Pattern p = Pattern.compile("([+]91)?[0-9]{10}");
+        Pattern p = Pattern.compile("([+]91)?[6-9][0-9]{9}");
 
         Matcher m = p.matcher(phoneNumber);
         return (m.find() && m.group().equals(phoneNumber));
