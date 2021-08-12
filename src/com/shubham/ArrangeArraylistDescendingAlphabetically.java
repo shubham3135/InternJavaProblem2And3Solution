@@ -7,9 +7,7 @@ public class ArrangeArraylistDescendingAlphabetically {
 
     public static void main(String[] args) {
         ArrayList<String>
-                list = new ArrayList<String>();
-
-        // Populate the ArrayList
+                list = new ArrayList<>();
         list.add("Shubham");
         list.add("Jitendra");
         list.add("Rahul");
@@ -19,7 +17,9 @@ public class ArrangeArraylistDescendingAlphabetically {
         list.add("Black");
         list.add("White");
         list.add("Niranjan");
-
+        list.add("Mango");
+        list.add("Apple");
+        list.add("Peanuts");
 
         System.out.println("Unsorted ArrayList: "
                 + list);
@@ -27,7 +27,7 @@ public class ArrangeArraylistDescendingAlphabetically {
         Collections.sort(list, Collections.reverseOrder());
 
         System.out.println("Sorted ArrayList "
-                + "in Descending order : "
+                + "in Alphabetically Descending order : "
                 + list);
     }
 }
